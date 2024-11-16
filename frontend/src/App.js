@@ -8,7 +8,6 @@ import RedirectIfAuthenticated from './RedirectIfAuthenticated';
 import Homevitrine from "./components/vitrine/Homevitrine";
 import Dashboard from "./components/dashboard/Dashboard";
 
-import Ecommerce from "./pages/Ecommerce";
 import Addorder from "./pages/Addorder";
 import Signup from "./components/dashboard/Signup";
 import VerificationPage from "./components/dashboard/VerificationPage";
@@ -55,56 +54,179 @@ const App = () => {
       <AuthProvider>
         <Router>
           <Routes>
-
-
             <Route path="/" exact element={<Homevitrine />}></Route>
-
             <Route path="/dashboard" element={
               <ProtectedRoute roles={['admin','assistance', 'technician']}>
-                <Dashboard  breadcrumb={[{"pagename1":"path1"},{"pagename2":"path2"}]} lastbreadcrumbItem ="User List"/>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Statistic"/>
               </ProtectedRoute>
             }>
               <Route index element={<Statistic/>} />
             </Route>
-
             <Route path="/admin" element={
               <ProtectedRoute roles={['admin', 'technician']}>
-                <Dashboard  breadcrumb={[{"pagename1":"path1"},{"pagename2":"path2"}]} lastbreadcrumbItem ="User List"/>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Clients"/>
+              </ProtectedRoute>
+            }>
+              <Route path="clients" element={<ProtectedRoute roles={['admin']}><Clientlist/></ProtectedRoute>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/clients":"Clients"},]} lastbreadcrumbItem ="View Client"/>
+              </ProtectedRoute>
+            }>
+              <Route path="viewclient/:userId" element={<ProtectedRoute roles={['admin']}><Clientview/> </ProtectedRoute>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Users"/>
               </ProtectedRoute>
             }>
               <Route path="users" element={<ProtectedRoute roles={['admin']}><Userlist /></ProtectedRoute>} />//, 'assistance'
-              <Route path="clients" element={<ProtectedRoute roles={['admin']}><Clientlist/></ProtectedRoute>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/users":"Users"},]} lastbreadcrumbItem ="View User"/>
+              </ProtectedRoute>
+            }>
               <Route path="viewuser/:userId" element={<ProtectedRoute roles={['admin']}><Userview/> </ProtectedRoute>} />
-              <Route path="viewclient/:userId" element={<ProtectedRoute roles={['admin']}><Clientview/> </ProtectedRoute>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Orders"/>
+              </ProtectedRoute>
+            }>
               <Route path="allorders" element={<ProtectedRoute roles={['admin']}><AllOrders/> </ProtectedRoute>} />
-              <Route path="orderView/:orderId/:userId" exact element={<ProtectedRoute roles={['admin']}><OverViewAdmin/> </ProtectedRoute>} />
-              <Route path="settings" element={<ProtectedRoute roles={['admin']}><Settings/> </ProtectedRoute>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allorders":"Orders"},]} lastbreadcrumbItem ="View Order"/>
+              </ProtectedRoute>
+            }>
+            <Route path="orderView/:orderId/:userId" exact element={<ProtectedRoute roles={['admin']}><OverViewAdmin/> </ProtectedRoute>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allorders":"Orders"},]} lastbreadcrumbItem ="Edit Order"/>
+              </ProtectedRoute>
+            }>
               <Route path="editorder/:orderId" element={<UpdateOrder/>} />
-              <Route path="addshape" element={<AddShape />} />
-              <Route path="updateshape/:ShapeId" element={<UpdateShape/>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Settings"/>
+              </ProtectedRoute>
+            }>
+              <Route path="settings" element={<ProtectedRoute roles={['admin']}><Settings/> </ProtectedRoute>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Shapes"/>
+              </ProtectedRoute>
+            }>
               <Route path="allshapes" element={<AllShapes />} />
-              <Route path="addmaterial" element={<AddMaterial />} />
-              <Route path="updatematerial/:MaterialId" element={<UpdateMaterial/>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allshapes":"Shapes"},]} lastbreadcrumbItem ="Add Shape"/>
+              </ProtectedRoute>
+            }>
+              <Route path="addshape" element={<AddShape />} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allshapes":"Shapes"},]} lastbreadcrumbItem ="Edit Shape"/>
+              </ProtectedRoute>
+            }>
+              <Route path="updateshape/:ShapeId" element={<UpdateShape/>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Materials"/>
+              </ProtectedRoute>
+            }>
               <Route path="allmaterials" element={<AllMaterial />} />
-              <Route path="addangle" element={<AddAngle />} />
-              <Route path="updateangle/:AngleId" element={<UpdateAngle/>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allmaterials":"Materials"},]} lastbreadcrumbItem ="Add Material"/>
+              </ProtectedRoute>
+            }>
+              <Route path="addmaterial" element={<AddMaterial />} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allmaterials":"Materials"},]} lastbreadcrumbItem ="Edit Material"/>
+              </ProtectedRoute>
+            }>
+              <Route path="updatematerial/:MaterialId" element={<UpdateMaterial/>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Angles"/>
+              </ProtectedRoute>
+            }>
               <Route path="allangles" element={<AllAngles />} />
-              <Route path="addedge" element={<AddEdge />} />
-              <Route path="updateedge/:EdgeId" element={<UpdateEdge/>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allangles":"Angles"},]} lastbreadcrumbItem ="Add Angle"/>
+              </ProtectedRoute>
+            }>
+              <Route path="addangle" element={<AddAngle />} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allangles":"Angles"},]} lastbreadcrumbItem ="Edit Angle"/>
+              </ProtectedRoute>
+            }>
+              <Route path="updateangle/:AngleId" element={<UpdateAngle/>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Edges"/>
+              </ProtectedRoute>
+            }>
               <Route path="alledges" element={<AllEdges />} />
-              <Route path="ecomerce" element={<Ecommerce />} />
-              <Route path="addMaterialType" element={<AddMaterialType />} />
-              <Route path="updateMaterialType/:materialTypeId" element={<UpdateMaterialType/>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/alledges":"Edges"},]} lastbreadcrumbItem ="Add Edge"/>
+              </ProtectedRoute>
+            }>
+              <Route path="addedge" element={<AddEdge />} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/alledges":"Edges"},]} lastbreadcrumbItem ="Edit Edge"/>
+              </ProtectedRoute>
+            }>
+              <Route path="updateedge/:EdgeId" element={<UpdateEdge/>} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Materials Types"/>
+              </ProtectedRoute>
+            }>
               <Route path="allMaterialType" element={<AllMaterialType/>} />
             </Route>
-
-
-
-
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allMaterialType":"Materials Types"},]} lastbreadcrumbItem ="Add Material Type"/>
+              </ProtectedRoute>
+            }>
+              <Route path="addMaterialType" element={<AddMaterialType />} />
+            </Route>
+            <Route path="/admin" element={
+              <ProtectedRoute roles={['admin', 'technician']}>
+                <Dashboard  breadcrumb={[{"/admin/allMaterialType":"Materials Types"},]} lastbreadcrumbItem ="Edit Material Type"/>
+              </ProtectedRoute>
+            }>
+              <Route path="updateMaterialType/:materialTypeId" element={<UpdateMaterialType/>} />
+            </Route>
 
             <Route path="/chat" element={
               <ProtectedRoute roles={['admin', 'assistance', 'client']}>
-                <Dashboard  breadcrumb={[{"pagename1":"path1"},{"pagename2":"path2"}]} lastbreadcrumbItem ="User List"/>
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Private Chat"/>
               </ProtectedRoute>
             }>
               <Route path="client" element={<ProtectedRoute roles={['client']}><PrivateChat/> </ProtectedRoute>} />
@@ -115,19 +237,36 @@ const App = () => {
 
             <Route path="/user" element={
               <ProtectedRoute roles={['client']}>
-                <Dashboard breadcrumb={[{"pagename1":"path1"},{"pagename2":"path2"}]} lastbreadcrumbItem ="User List" />
+                <Dashboard  breadcrumb={[]} lastbreadcrumbItem ="Order History"/>
+              </ProtectedRoute>
+            }>
+              <Route path="allorders" exact element={<Orderhistory/>} />
+            </Route>
+            <Route path="/user" element={
+              <ProtectedRoute roles={['client']}>
+                <Dashboard  breadcrumb={[{"/user/allorders":"Order History"},]} lastbreadcrumbItem ="View Order"/>
+              </ProtectedRoute>
+            }>
+            <Route path="orderView/:orderId" exact element={<OrderView/>} />
+            </Route>
+            <Route path="/user" element={
+              <ProtectedRoute roles={['client']}>
+                <Dashboard  breadcrumb={[{"/user/allorders":"Order History"},]} lastbreadcrumbItem ="Add Order"/>
               </ProtectedRoute>
             }>
               <Route path="addorder" exact element={<Addorder />} />//   /:userId
-              <Route path="allorders" exact element={<Orderhistory/>} />
-              <Route path="orderView/:orderId" exact element={<OrderView/>} />
+            </Route>
+            <Route path="/user" element={
+              <ProtectedRoute roles={['client']}>
+                <Dashboard  breadcrumb={[{"/user/allorders":"Order History"},]} lastbreadcrumbItem ="Edit Order"/>
+              </ProtectedRoute>
+            }>
               <Route path="editorder/:orderId" element={<UpdateOrder/>} />
             </Route>
 
-
             <Route path="/user" element={
               <ProtectedRoute roles={['client','admin','technician','assistance']}>
-                <Dashboard breadcrumb={[{"pagename1":"path1"},{"pagename2":"path2"}]} lastbreadcrumbItem ="User List" />
+                <Dashboard breadcrumb={[]} lastbreadcrumbItem ="My profile" />
               </ProtectedRoute>
             }>
               <Route path="profile/:userId" element={<Profile/>} />
@@ -139,18 +278,16 @@ const App = () => {
             <Route path="/auth/:userId/verify/:token" element={<RedirectIfAuthenticated><VerificationPage /></RedirectIfAuthenticated>} />
 
             <Route path="/faq" element={
-              <Dashboard breadcrumb={[{"pagename1":"path1"},{"pagename2":"path2"}]} lastbreadcrumbItem ="User List" />
-          }>
-            <Route index element={<FAQ/>} />
-          </Route>
+                <Dashboard breadcrumb={[]} lastbreadcrumbItem ="FAQ" />
+            }>
+              <Route index element={<FAQ/>} />
+            </Route>
 
-          <Route path="/aboutus" element={
-            <Dashboard breadcrumb={[{"pagename1":"path1"},{"pagename2":"path2"}]} lastbreadcrumbItem ="User List" />
-        }>
-          <Route index element={<AboutUs/>} />
-        </Route>
-
-
+            <Route path="/aboutus" element={
+                <Dashboard breadcrumb={[]} lastbreadcrumbItem ="About" />
+            }>
+              <Route index element={<AboutUs/>} />
+            </Route>
 
             <Route path="/404" exact element={<Notfoundpage />} />
             <Route path="*" element={<Notfoundpage />} />

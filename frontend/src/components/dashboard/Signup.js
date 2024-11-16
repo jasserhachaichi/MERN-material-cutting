@@ -82,7 +82,7 @@ const Signup = () => {
 
 
     const onSuccess = (res) => {
-        console.log("Login Success! Current user: ", res.profileObj);
+        //console.log("Login Success! Current user: ", res.profileObj);
         try {
             axios.post('http://localhost:4000/auth/google/register', res.profileObj, { withCredentials: true } 
             ).then(response => {
@@ -166,14 +166,13 @@ const Signup = () => {
 
 
                                     <h1 className="fw-bold fs-2qx pb-5 pb-md-10 text-white">
-                                        Welcome to Rider
+                                        Welcome to CutMaster
                                     </h1>
 
 
 
                                     <p className="text-white fw-semibold fs-2">
-                                        Discover Simply Amazing Admin Dashboard <br />
-                                        With The Stunning Design System
+                                    Whether you need a simple cut or a more intricate design, CutMaster is here to bring your ideas to life with accuracy and efficiency.
                                     </p>
 
                                 </div>

@@ -74,7 +74,7 @@ function Asidemenu() {
                                         <span className="path4"></span>
                                     </i>
                                 </span>
-                                <span className="menu-title">Dashboard</span>
+                                <span className="menu-title">Statistics</span>
                             </a>
                         </div>
 
@@ -120,7 +120,7 @@ function Asidemenu() {
                                 <span className="menu-icon">
                                     <i className="ki-duotone ki-cube-2 fs-2"> <span className="path1"></span> <span className="path2"></span> <span className="path3"></span> </i>
                                 </span>
-                                <span className="menu-title">Material Type</span>
+                                <span className="menu-title">Materials Types</span>
                                 <span className="menu-arrow"></span>
                             </span>
                             <div className="menu-sub menu-sub-accordion">
@@ -249,7 +249,7 @@ function Asidemenu() {
                                 <span className="menu-icon">
                                     <i className="ki-duotone ki-cube-2 fs-2"> <span className="path1"></span> <span className="path2"></span> <span className="path3"></span> </i>
                                 </span>
-                                <span className="menu-title">Material</span>
+                                <span className="menu-title">Materials</span>
                                 <span className="menu-arrow"></span>
                             </span>
 

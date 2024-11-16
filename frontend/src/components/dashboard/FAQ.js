@@ -16,13 +16,6 @@ function FAQ() {
                                 Frequesntly Asked Questions
                             </h4>
 
-
-
-                            <p className="fw-semibold fs-4 text-gray-600 mb-2">
-                                First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours,
-                                even if you can type eighty words as per minute and your writing skills are sharp.
-                            </p>
-
                         </div>
 
 
@@ -32,7 +25,7 @@ function FAQ() {
                             <div className="col-md-6 pe-md-10 mb-10 mb-md-0">
 
                                 <h2 className="text-gray-800 fw-bold mb-4">
-                                    Buying Product
+                                General Information
                                 </h2>
 
 
@@ -52,7 +45,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How does it work?
+                                        What is CutMaster and how does it work?
                                         </h4>
 
                                     </div>
@@ -62,7 +55,7 @@ function FAQ() {
                                     <div id="kt_job_4_1" className="collapse show fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        CutMaster is an online platform that allows users to order custom-cut materials based on their specifications. You choose the material, shape, and dimensions, and we handle the rest.              </div>
 
                                     </div>
 
@@ -88,7 +81,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            Do I need a designer to use Admin Theme ?
+                                        What types of customers does CutMaster serve?
                                         </h4>
 
                                     </div>
@@ -98,7 +91,7 @@ function FAQ() {
                                     <div id="kt_job_4_2" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        We serve both individual DIY enthusiasts and professional businesses in industries such as construction, interior design, and manufacturing.</div>
 
                                     </div>
 
@@ -124,7 +117,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            What do I need to do to start selling?
+                                        What materials can I order from CutMaster?
                                         </h4>
 
                                     </div>
@@ -134,7 +127,7 @@ function FAQ() {
                                     <div id="kt_job_4_3" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        We offer a wide variety of materials including wood, metal, plastic, glass, and more. Our catalog features over 150 material options.                                               </div>
 
                                     </div>
 
@@ -160,7 +153,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How much does Extended license cost?
+                                        Is CutMaster available worldwide?
                                         </h4>
 
                                     </div>
@@ -170,7 +163,7 @@ function FAQ() {
                                     <div id="kt_job_4_4" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        Currently, CutMaster primarily serves customers within [your region or country]. We are planning to expand internationally soon.                                                         </div>
 
                                     </div>
 
@@ -186,7 +179,7 @@ function FAQ() {
                             <div className="col-md-6 ps-md-10">
 
                                 <h2 className="text-gray-800 fw-bold mb-4">
-                                    Installation
+                                Order Process
                                 </h2>
 
 
@@ -206,7 +199,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            What platforms are compatible?
+                                        How do I place an order?
                                         </h4>
 
                                     </div>
@@ -216,7 +209,7 @@ function FAQ() {
                                     <div id="kt_job_5_1" className="collapse show fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        To place an order, simply choose your material, customize your cut by selecting shape and dimensions, and proceed to checkout. You can also request a quote before confirming.     </div>
 
                                     </div>
 
@@ -242,7 +235,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How many people can it support?
+                                        Can I submit my own design or plan for cutting?
                                         </h4>
 
                                     </div>
@@ -252,7 +245,7 @@ function FAQ() {
                                     <div id="kt_job_5_2" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        Yes, you can upload your design or detailed plan directly through our platform, and we’ll take care of the rest. </div>
 
                                     </div>
 
@@ -278,7 +271,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How long is the warrianty?
+                                        Can I modify or cancel my order after submission?
                                         </h4>
 
                                     </div>
@@ -288,7 +281,7 @@ function FAQ() {
                                     <div id="kt_job_5_3" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        You may modify or cancel your order within the first 24 hours after submission. Please contact customer support as soon as possible to make changes.    </div>
 
                                     </div>
 
@@ -314,7 +307,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How fast is the installation?
+                                        What if I need help with my order?
                                         </h4>
 
                                     </div>
@@ -324,7 +317,9 @@ function FAQ() {
                                     <div id="kt_job_5_4" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        Our customer support team is available through live chat or email to guide you through the ordering process or answer any questions.
+
+                                        </div>
 
                                     </div>
 
@@ -344,7 +339,7 @@ function FAQ() {
                             <div className="col-md-6 pe-md-10 mb-10 mb-md-0">
 
                                 <h2 className="text-gray-800 w-bolder mb-4">
-                                    User Roles
+                                Customization & Materials
                                 </h2>
 
 
@@ -364,7 +359,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How does it work?
+                                        Can I choose custom shapes for my materials?
                                         </h4>
 
                                     </div>
@@ -374,7 +369,7 @@ function FAQ() {
                                     <div id="kt_job_6_1" className="collapse show fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        Yes, our platform allows you to select from a variety of standard shapes, or you can provide custom specifications for more complex designs.     </div>
 
                                     </div>
 
@@ -400,7 +395,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            Do I need a designer to use this Admin Theme?
+                                        Are there options for finishing the edges of my material?
                                         </h4>
 
                                     </div>
@@ -410,7 +405,7 @@ function FAQ() {
                                     <div id="kt_job_6_2" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        Absolutely! We offer several finishing options such as rounded edges, chamfers, and polished finishes, depending on the material.   </div>
 
                                     </div>
 
@@ -436,7 +431,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            What do I need to do to start selling?
+                                        How precise is the cutting process?
                                         </h4>
 
                                     </div>
@@ -446,7 +441,7 @@ function FAQ() {
                                     <div id="kt_job_6_3" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                          We use advanced cutting machinery to ensure high precision, with tolerances as low as +/- 0.5mm, depending on the material.   </div>
 
                                     </div>
 
@@ -472,7 +467,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How much does Extended license cost?
+                                        Can I combine different materials in a single order?
                                         </h4>
 
                                     </div>
@@ -482,7 +477,7 @@ function FAQ() {
                                     <div id="kt_job_6_4" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        Yes, you can mix different types of materials in one order. Simply add each item separately to your cart.  </div>
 
                                     </div>
 
@@ -498,7 +493,7 @@ function FAQ() {
                             <div className="col-md-6 ps-md-10">
 
                                 <h2 className="text-gray-800 fw-bold mb-4">
-                                    Reports Generation
+                                Pricing & Delivery
                                 </h2>
 
 
@@ -518,7 +513,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            What platforms are compatible?
+                                        How is the cost calculated for custom cuts?
                                         </h4>
 
                                     </div>
@@ -528,7 +523,7 @@ function FAQ() {
                                     <div id="kt_job_7_1" className="collapse show fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        The cost is calculated based on the material, size, complexity of the cut, and finishing options. You can get an instant estimate as you customize your order.</div>
 
                                     </div>
 
@@ -554,7 +549,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How many people can it support?
+                                        Are there discounts for bulk orders?
                                         </h4>
 
                                     </div>
@@ -564,7 +559,7 @@ function FAQ() {
                                     <div id="kt_job_7_2" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        Yes, we offer discounts for bulk orders. Contact our sales team to discuss pricing for large projects.</div>
 
                                     </div>
 
@@ -590,7 +585,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How long is the warrianty?
+                                        How long does it take to receive my order?
                                         </h4>
 
                                     </div>
@@ -600,7 +595,7 @@ function FAQ() {
                                     <div id="kt_job_7_3" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        The delivery time depends on your location and the complexity of the order. Typically, orders are processed within 3-5 business days, with shipping taking an additional 2-7 days.       </div>
 
                                     </div>
 
@@ -626,7 +621,7 @@ function FAQ() {
 
 
                                         <h4 className="text-gray-700 fw-bold cursor-pointer mb-0">
-                                            How fast is the installation?
+                                        What are the shipping options and costs?
                                         </h4>
 
                                     </div>
@@ -636,7 +631,7 @@ function FAQ() {
                                     <div id="kt_job_7_4" className="collapse  fs-6 ms-1">
 
                                         <div className="mb-4 text-gray-600 fw-semibold fs-6 ps-10">
-                                            First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words as per minute and your writing skills are sharp.                </div>
+                                        We offer multiple shipping options, including standard and express delivery. Shipping costs are calculated at checkout based on your location and the weight of the materials.    </div>
 
                                     </div>
 

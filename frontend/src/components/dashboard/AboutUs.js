@@ -40,41 +40,19 @@ function AboutUs() {
                         <div className="fs-5 fw-semibold text-gray-600">
 
                             <p className="mb-8">
-                                First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words per minute and your writing skills are sharp.
-                                From the seed of the idea to finally hitting “Publish,” you might spend several days or maybe even a week “writing” a blog post, but it’s important to spend those vital hours planning
-                                your post and even thinking about
-
-                                <a href="blog/post.html" className="link-primary pe-1">Your Post</a>
-
-                                (yes, thinking counts as working if you’re a blogger) before you actually write it.
+                            CutMaster is an innovative web-based platform specializing in the custom cutting of materials. Our mission is to make high-quality materials accessible to everyone, from DIY enthusiasts to professional craftsmen, by offering precise, tailor-made cutting services online. With a vast selection of over 150 materials and customizable options, we provide solutions for projects of all sizes, ensuring the perfect cut every time.
                             </p>
 
 
 
                             <p className="mb-8">
-                                There’s an old maxim that states,
-                                <span className="text-gray-800 pe-1">“No fun for the writer, no fun for the reader.”</span>
-                                No matter what industry you’re working in, as a blogger, you should live and die by this statement.
-                            </p>
-
-
-
-                            <p className="mb-8">
-                                Before you do any of the following steps, be sure to pick a topic that actually interests you. Nothing – and
-
-                                <a href="blog/home.html" className="link-primary pe-1">I mean NOTHING</a>
-
-                                – will kill a blog post more effectively than a lack of enthusiasm from the writer.
-                                You can tell when a writer is bored by their subject, and it’s so cringe-worthy it’s a little embarrassing.
+                            We pride ourselves on combining cutting-edge technology with expert craftsmanship to meet the unique needs of our customers. Our easy-to-use interface allows users to choose their preferred material, customize the shape, and receive instant cost estimates — all from the comfort of their own home or office. At CutMaster, we are committed to quality, precision, and customer satisfaction, offering professional advice through real-time chat support and delivering products swiftly and securely.
                             </p>
 
 
 
                             <p className="mb-17">
-                                I can hear your objections already. “But Dan, I have to blog for a cardboard box manufacturing company.” I feel your pain, I really do.
-                                During the course of my career, I’ve written content for dozens of clients in some less-than-thrilling industries (such as financial regulatory
-                                compliance and corporate housing), but the hallmark of a professional blogger is the ability to write well about any topic, no matter how dry it may be.
-                                Blogging is a lot easier, however, if you can muster at least a little enthusiasm for the topic at hand.
+                            Whether you need a simple cut or a more intricate design, CutMaster is here to bring your ideas to life with accuracy and efficiency.
                             </p>
 
                         </div>
@@ -195,8 +173,7 @@ function AboutUs() {
 
 
                             <div className="fs-2 fw-semibold text-muted text-center">
-                                <a href="/account/security.html" className="link-primary fs-4 fw-bold">Marcus Levy</a>
-                                <span className="fs-4 fw-bold text-gray-600">,KeenThemes CEO</span>
+                                <span className="fs-4 fw-bold text-gray-600">CutMaster CEO</span>
                             </div>
 
                         </div>

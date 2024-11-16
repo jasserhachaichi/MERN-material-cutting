@@ -49,7 +49,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-rocket fs-1"><span className="path1"></span><span className="path2"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de clients: {stats.clientCount}
+                    Number of customers: {stats.clientCount}
                   </span>
                 </div>
               </div>
@@ -60,7 +60,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-timer fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de commandes: {stats.orderCount}
+                    Number of orders: {stats.orderCount}
                   </span>
                 </div>
               </div>
@@ -71,7 +71,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de commandes en cours: {stats.ongoingOrders}
+                    Number of orders in progress: {stats.ongoingOrders}
                   </span>
                 </div>
               </div>
@@ -82,7 +82,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de commandes terminées: {stats.completedOrders}
+                    Number of completed orders: {stats.completedOrders}
                   </span>
                 </div>
               </div>
@@ -93,29 +93,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de commandes annulées: {stats.canceledOrders}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 mb-3">
-              <div href="#" className="card  shadow-sm ">
-                <div className="card-body d-flex align-items">
-                  <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
-                  <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Revenu total généré: {stats.totalRevenue}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 mb-3">
-              <div href="#" className="card  shadow-sm ">
-                <div className="card-body d-flex align-items">
-                  <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
-                  <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de formes total: {stats.totalShapes}
+                    Number of cancelled orders: {stats.canceledOrders}
                   </span>
                 </div>
               </div>
@@ -127,7 +105,19 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de formes disponibles: {stats.availableShapes}
+                    Total number of shapes: {stats.totalShapes}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4 mb-3">
+              <div href="#" className="card  shadow-sm ">
+                <div className="card-body d-flex align-items">
+                  <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
+                  <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
+                    Number of shapes available: {stats.availableShapes}
                   </span>
                 </div>
               </div>
@@ -138,7 +128,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de matériaux total: {stats.totalMaterials}
+                    Total number of materials: {stats.totalMaterials}
                   </span>
                 </div>
               </div>
@@ -149,7 +139,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de matériaux disponibles: {stats.availableMaterials}
+                    Number of materials available: {stats.availableMaterials}
                   </span>
                 </div>
               </div>
@@ -160,7 +150,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre de types de matériaux total: {stats.totalMaterialTypes}
+                    Total number of material types: {stats.totalMaterialTypes}
                   </span>
                 </div>
               </div>
@@ -171,7 +161,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre des edges total: {stats.totalEdges}
+                    Total number of edges: {stats.totalEdges}
                   </span>
                 </div>
               </div>
@@ -193,7 +183,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre des angles total: {stats.totalAngles}
+                    Total number of angles: {stats.totalAngles}
                   </span>
                 </div>
               </div>
@@ -204,7 +194,7 @@ function Statistic() {
                 <div className="card-body d-flex align-items">
                   <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                   <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                    Nombre des angles disponibles: {stats.availableAngles}
+                    Number of available angles: {stats.availableAngles}
                   </span>
                 </div>
               </div>
@@ -215,7 +205,7 @@ function Statistic() {
               <div className="card-body d-flex align-items">
                 <i className="ki-duotone ki-bucket fs-1"><span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span></i>
                 <span className="ms-3 text-gray-700 parent-hover-primary fs-6 fw-bold">
-                  Nombre de types de matériaux disponibles: {stats.availableMaterialTypes}
+                  Number of material types available: {stats.availableMaterialTypes}
                 </span>
               </div>
             </div>

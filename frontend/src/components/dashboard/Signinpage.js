@@ -69,6 +69,10 @@ function Signinpage() {
                         navigate(`/user/addorder`, { replace: true });
                     }else if (response.data.user.role == 'admin') {
                         navigate(`/dashboard`, { replace: true });
+                    }else if(response.data.user.role == 'assistance'){
+                        navigate(`/chat/staff`, { replace: true });
+                    }else{
+                        navigate(`/`, { replace: true });
                     }
                 }
             } else {
@@ -97,7 +101,7 @@ function Signinpage() {
     const password = watch('password');
 
     const onSuccess = (res) => {
-        console.log("Login Success! Current user: ", res.profileObj);
+        //console.log("Login Success! Current user: ", res.profileObj);
         try {
             axios.post('http://localhost:4000/auth/google/login', res.profileObj, { withCredentials: true } 
             ).then(response => {
@@ -112,6 +116,10 @@ function Signinpage() {
                             navigate(`/user/addorder`, { replace: true });
                         }else if (response.data.client.role == 'admin') {
                             navigate(`/dashboard`, { replace: true });
+                        }else if(response.data.client.role == 'assistance'){
+                            navigate(`/chat/staff`, { replace: true });
+                        }else{
+                            navigate(`/`, { replace: true });
                         }
                     }
                 } else {
@@ -173,20 +181,19 @@ function Signinpage() {
 
 
                                     <h1 className="fw-bold fs-2qx pb-5 pb-md-10 text-white">
-                                        Welcome to Rider
+                                        Welcome to CutMaster
                                     </h1>
 
 
 
                                     <p className="text-white fw-semibold fs-2">
-                                        Discover Simply Amazing Admin Dashboard <br />
-                                        With The Stunning Design System
+                                    Whether you need a simple cut or a more intricate design, CutMaster is here to bring your ideas to life with accuracy and efficiency.
                                     </p>
 
                                 </div>
 
                                 <div className="d-flex flex-row-auto flex-center">
-                                    <img src="/assets/media/illustrations/dozzy-1/2.png" alt=""
+                                    <img src="/assets/images/mechanical-engineer-.jpg" alt=""
                                         className="h-200px h-lg-350px mb-10" />
                                 </div>
 
@@ -206,7 +213,7 @@ function Signinpage() {
                                         <div className="text-center mb-10">
 
                                             <h1 className="text-gray-900 mb-3">
-                                                Sign In to Rider HTML Pro </h1>
+                                                Sign In to CutMaster </h1>
 
                                             <div className="text-gray-500 fw-semibold fs-4">
                                                 New Here?

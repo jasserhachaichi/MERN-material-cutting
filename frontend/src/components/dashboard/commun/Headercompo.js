@@ -208,12 +208,9 @@ function Headercompo({ breadcrumb,lastbreadcrumbItem, onToggleAside }) {
 
         <ul className="breadcrumb fw-semibold fs-base mb-1">
           <li className="breadcrumb-item text-muted">
-            <a
-              href="/"
-              className="text-muted text-hover-primary"
-            >
-              Home
-            </a>
+            <span className="text-muted">
+              Dashboard
+            </span>
           </li>
 
 
@@ -265,7 +262,7 @@ function Headercompo({ breadcrumb,lastbreadcrumbItem, onToggleAside }) {
 
 
 
-        <div className="d-flex align-items-stretch ms-2 ms-lg-3">
+{ (userRole =='admin' || userRole == 'assistance') &&  (        <div className="d-flex align-items-stretch ms-2 ms-lg-3">
           <div
             id="kt_header_search"
             className="header-search d-flex align-items-stretch"
@@ -382,7 +379,7 @@ function Headercompo({ breadcrumb,lastbreadcrumbItem, onToggleAside }) {
               </div>
             </div>
           </div>
-        </div>
+        </div>)}
 
 
 
